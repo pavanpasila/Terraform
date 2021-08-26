@@ -10,6 +10,17 @@ variable "AMI" {
     }
 }
 
+variable "PRIVATE_KEY_PATH" {
+  default = "ohio-region-key-pair"
+}
+
+variable "PUBLIC_KEY_PATH" {
+  default = "ohio-region-key-pair.pub"
+}
+
+variable "EC2_USER" {
+  default = "ubuntu"
+}
 
 
 
