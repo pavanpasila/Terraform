@@ -19,6 +19,7 @@ pipeline {
     stage ('infra provision terraform'){
       steps {
         sh '''
+        aws --version
         terraform --version 
         cd Network
         ls -ltr
