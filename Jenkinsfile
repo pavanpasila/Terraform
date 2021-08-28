@@ -9,7 +9,11 @@ pipeline {
       }
     stage ('infra provision terraform'){
       steps {
-        sh 'terraform --version'  
+        sh '''
+        terraform --version 
+        cd Network
+        ls -ltr
+        '''
       }
     }
   
