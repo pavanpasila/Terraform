@@ -13,6 +13,7 @@ pipeline {
         terraform --version 
         cd Network
         ls -ltr
+        terraform init
         '''
       }
     }
