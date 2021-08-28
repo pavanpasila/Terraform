@@ -21,6 +21,7 @@ pipeline {
         sh '''
         aws --version
         aws s3 ls
+        aws configure list
         terraform --version 
         cd Network
         ls -ltr
