@@ -20,8 +20,8 @@ pipeline {
       steps {
         sh '''
         aws --version
-        aws s3 ls
         aws configure list
+        aws s3 ls
         terraform --version 
         cd Network
         ls -ltr
