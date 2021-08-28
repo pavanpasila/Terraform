@@ -29,7 +29,7 @@ pipeline {
         ls -ltr
         terraform init
         terraform plan
-        terraform apply
+        terraform apply -auto-approve
         '''
       }
     }
