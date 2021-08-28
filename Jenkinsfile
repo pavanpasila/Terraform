@@ -23,6 +23,7 @@ pipeline {
         cd Network
         ls -ltr
         terraform init
+        terraform plan
         '''
       }
     }
