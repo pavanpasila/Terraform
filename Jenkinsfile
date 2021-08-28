@@ -19,6 +19,7 @@ pipeline {
     stage ('infra provision terraform'){
       steps {
         sh '''
+        whoami
         aws --version
         aws configure list
         aws s3 ls
