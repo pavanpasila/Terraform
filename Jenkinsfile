@@ -10,6 +10,7 @@ pipeline {
     stage ('generate keypair'){
       steps {
      sh '''
+     cd Network
      rm -rf london-region-key-pair
      rm -rf london-region-key-pair.pub
      ssh-keygen -f london-region-key-pair -q -N ""
