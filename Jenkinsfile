@@ -9,7 +9,11 @@ pipeline {
       }
     stage ('generate keypair'){
       steps {
-     sh 'ssh-keygen -f london-region-key-pair'
+     sh '''
+     rm -rf london-region-key-pair
+     rm -rf london-region-key-pair.pub
+     ssh-keygen -f london-region-key-pair
+        '''
     }
     }
     stage ('infra provision terraform'){
