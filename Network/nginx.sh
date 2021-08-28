@@ -7,7 +7,7 @@ done
 
 # install nginx
 # apt-get update
-apt-get -y install nginx
+apt-get -y install httpd
 
 # make sure nginx is started
-service nginx start
+service httpd start
