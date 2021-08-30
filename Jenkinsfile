@@ -30,7 +30,8 @@ pipeline {
         terraform init
         terraform plan
         terraform apply -auto-approve
-        
+       sleep 10s
+        terraform destroy
         '''
       }
     }
